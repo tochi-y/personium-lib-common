@@ -37,7 +37,6 @@ jobs:
         cat ./.github/workflows/scripts/update-version.sh
         ls -al ./.github/workflows/scripts/
         bash ./.github/workflows/scripts/update-version.sh
-        bash ./.github/workflows/scripts/notfound.sh
       env:
         GITHUB_USER: personiumio
         GITHUB_TOKEN: ${{ secrets.PERSONIUM_GITHUB_TOKEN }}
