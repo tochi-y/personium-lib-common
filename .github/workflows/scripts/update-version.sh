@@ -1,5 +1,7 @@
 #!/bin/bash -xe
 
+echo 'Update versions started.'
+
 MINOR_VERSION=$(
   sed -n 's|^    <version>[0-9]\+\.[0-9]\+\.\([0-9]\+\)-SNAPSHOT</version>|\1|p' pom.xml
 )
