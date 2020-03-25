@@ -33,6 +33,8 @@ jobs:
 
     - name: Update versions on develop branch
       run: |
+        git branch
+        cat ./.github/workflows/scripts/update-version.sh
         bash ./.github/workflows/scripts/update-version.sh
       env:
         GITHUB_USER: personiumio
